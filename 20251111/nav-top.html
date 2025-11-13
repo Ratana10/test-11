@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+     .navbar{
+      background-color: rgb(29, 29, 79);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+     }
+
+    .navbar-list{
+      display: flex;
+      list-style: none;
+    }
+
+    .nav-item{
+      text-decoration: none;
+      padding: 20px;
+      color: white;
+      display: block;
+    }
+    
+    .nav-item:hover{
+      color: tomato;
+      font-size: 18px;
+    }
+
+    .logo{
+      width: 60px;
+      height: 60px;
+    }
+
+    .menu-icon{
+      display: none;
+      color: white;
+    }
+
+    @media (max-width: 768px){
+      .navbar-list{
+        display: none;
+      }
+
+      .menu-icon{
+        display: flex;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+     <header class="navbar">
+    <!-- Logo -->
+     <div>
+      <img class="logo" src="https://img.icons8.com/?size=100&id=118568&format=png&color=000000" alt="">
+     </div>
+
+    <!-- Navbar -->
+    <ul class="navbar-list">
+      <li><a href="" class="nav-item">Home</a></li>
+      <li><a href="" class="nav-item">Product</a></li>
+      <li><a href="" class="nav-item">Contact</a></li>
+      <li><a href="" class="nav-item">About</a></li>
+    </ul>
+
+    <div class="menu-icon">
+        <i data-lucide="menu" ></i>
+    </div>
+
+
+  </header>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

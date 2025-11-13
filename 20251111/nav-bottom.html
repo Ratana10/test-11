@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    
+    .nav-bottom{
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background-color: rgb(29, 29, 79);
+      display: none;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    .nav-bottom-item{
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .active{
+      color: tomato;
+    }
+
+    @media (max-width: 768px){
+      .nav-bottom{
+        display: flex;
+      }
+    }
+
+  </style>
+</head>
+<body>
+     
+  <nav class="nav-bottom">
+    <a href="" class="nav-bottom-item active">
+      <i data-lucide="home"></i>
+      Home
+    </a>
+    <a href="" class="nav-bottom-item">
+      <i data-lucide="home"></i>
+      Home
+    </a>
+    <a href="" class="nav-bottom-item">
+        <i data-lucide="x"></i>
+      Home
+    </a>
+    <a href="" class="nav-bottom-item">
+      <i data-lucide="airplay"></i>
+      Home
+    </a>
+  </nav>
+  <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=header, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+
+        .navbar {
+            background-color: blue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+            gap: 10px;
+        }
+
+        .nav-item {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu-icon {
+            color: white;
+            display: none;
+        }
+
+        @media (max-width:768px) {
+            .nav-list {
+                display: none;
+            }
+
+            .menu-icon {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <div>
+            <img src="https://img.icons8.com/?size=100&id=z657ovoGgS2o&format=png&color=000000" alt="">
+        </div>
+        <ul class="nav-list">
+            <li><a href="" class="nav-item">Home</a></li>
+            <li><a href="" class="nav-item">Product</a> </li>
+            <li><a href="" class="nav-item">Content</a></li>
+            <li><a href="" class="nav-item">About</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i data-lucide="menu"></i>
+        </div>
+    </header>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
